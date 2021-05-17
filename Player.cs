@@ -15,6 +15,10 @@ namespace Strategy
 
         public void SetStrategy(IMovingStrategy movingStrategy)
         {
+            if(movingStrategy == null)
+            {
+                throw new Exception();
+            }
             this.movingStrategy = movingStrategy;
         }
 
